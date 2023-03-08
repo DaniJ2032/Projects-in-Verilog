@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 22 09:53:05 2022
+# Process ID: 30684
+# Current directory: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/impl_1
+# Command line: vivado -log fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga.tcl -notrace
+# Log file: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/impl_1/fpga.vdi
+# Journal file: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source fpga.tcl -notrace

@@ -1,0 +1,10 @@
+verilog xil_defaultlib --include "../../../../project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ipshared/d0f7" --include "../../../../project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ipshared/ec67/hdl" \
+"../../../bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0.v" \
+"../../../bd/MicroGPIO/sim/MicroGPIO.v" \
+"../../../bd/MicroGPIO/ip/MicroGPIO_lmb_bram_1/sim/MicroGPIO_lmb_bram_1.v" \
+"../../../bd/MicroGPIO/ip/MicroGPIO_xbar_1/sim/MicroGPIO_xbar_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

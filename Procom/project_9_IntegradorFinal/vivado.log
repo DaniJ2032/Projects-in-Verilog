@@ -1,0 +1,413 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Feb 24 13:49:23 2023
+# Process ID: 10861
+# Current directory: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer
+# Command line: vivado
+# Log file: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/vivado.log
+# Journal file: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 7381.406 ; gain = 68.105 ; free physical = 4993 ; free virtual = 12197
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_prueba' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj tb_prueba_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlockRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CounterBerI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CounterBerQ
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataFilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FaseAndSlicerQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prbsQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_rotation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtro_firQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logeo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WaveSinAndCos
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_prueba
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+xelab -wto 6f77cfd1610a493397f0c04c75a30f5f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_prueba_behav xil_defaultlib.tb_prueba xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 6f77cfd1610a493397f0c04c75a30f5f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_prueba_behav xil_defaultlib.tb_prueba xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'ReadAdress' [/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" Line 23. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" Line 8. Module top_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" Line 8. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" Line 8. Module prbsQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" Line 8. Module filtro_firQI_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" Line 12. Module FaseAndSlicerQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" Line 9. Module CounterBerI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" Line 9. Module CounterBerQ doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" Line 8. Module top_rotation doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" Line 15. Module WaveSinAndCos doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" Line 8. Module DataFilter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" Line 8. Module logeo doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" Line 8. Module BlockRAM_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" Line 23. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" Line 8. Module top_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" Line 8. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" Line 8. Module prbsQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" Line 8. Module filtro_firQI_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" Line 12. Module FaseAndSlicerQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" Line 9. Module CounterBerI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" Line 9. Module CounterBerQ doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" Line 8. Module top_rotation doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" Line 15. Module WaveSinAndCos doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" Line 8. Module DataFilter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" Line 8. Module logeo doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" Line 8. Module BlockRAM_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.prbsQI
+Compiling module xil_defaultlib.filtro_firQI_default
+Compiling module xil_defaultlib.FaseAndSlicerQI
+Compiling module xil_defaultlib.CounterBerI
+Compiling module xil_defaultlib.CounterBerQ
+Compiling module xil_defaultlib.top_tx
+Compiling module xil_defaultlib.WaveSinAndCos
+Compiling module xil_defaultlib.DataFilter_default
+Compiling module xil_defaultlib.top_rotation
+Compiling module xil_defaultlib.BlockRAM_default
+Compiling module xil_defaultlib.logeo
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_prueba
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_prueba_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim/xsim.dir/tb_prueba_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 24 13:56:31 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_prueba_behav -key {Behavioral:sim_1:Functional:tb_prueba} -tclbatch {tb_prueba.tcl} -protoinst "protoinst_files/ila.protoinst" -protoinst "protoinst_files/VIO.protoinst" -protoinst "protoinst_files/MicroGPIO.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/ila.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/ila.protoinst for the following reason(s):
+There are no instances of module "ila" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/VIO.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/VIO.protoinst for the following reason(s):
+There are no instances of module "VIO" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/MicroGPIO.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/MicroGPIO.protoinst for the following reason(s):
+There are no instances of module "MicroGPIO" in the design.
+
+Time resolution is 1 ps
+source tb_prueba.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_prueba_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 7678.305 ; gain = 0.000 ; free physical = 4769 ; free virtual = 12103
+run 40000 ns
+run 40000 ns
+run 40000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Feb 24 13:59:36 2023] Launched synth_1...
+Run output will be captured here: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/synth_1/runme.log
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_prueba' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj tb_prueba_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BlockRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CounterBerI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CounterBerQ
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataFilter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FaseAndSlicerQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prbsQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_rotation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module filtro_firQI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logeo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WaveSinAndCos
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/tb_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_prueba
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.sim/sim_1/behav/xsim'
+xelab -wto 6f77cfd1610a493397f0c04c75a30f5f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_prueba_behav xil_defaultlib.tb_prueba xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 6f77cfd1610a493397f0c04c75a30f5f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_prueba_behav xil_defaultlib.tb_prueba xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'ReadAdress' [/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" Line 23. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" Line 8. Module top_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" Line 8. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" Line 8. Module prbsQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" Line 8. Module filtro_firQI_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" Line 12. Module FaseAndSlicerQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" Line 9. Module CounterBerI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" Line 9. Module CounterBerQ doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" Line 8. Module top_rotation doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" Line 15. Module WaveSinAndCos doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" Line 8. Module DataFilter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" Line 8. Module logeo doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" Line 8. Module BlockRAM_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/TopGlobal.v" Line 23. Module top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/TopFilterTX.v" Line 8. Module top_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/counter.v" Line 8. Module counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/PRBS9.v" Line 8. Module prbsQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/filtro_fir.v" Line 8. Module filtro_firQI_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/FaseAndSlicer.v" Line 12. Module FaseAndSlicerQI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerI.v" Line 9. Module CounterBerI doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleFIlterTX/CounterBerQ.v" Line 9. Module CounterBerQ doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/TopRotation.v" Line 8. Module top_rotation doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/ondaSinAndCos.v" Line 15. Module WaveSinAndCos doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/ModuleRotation/DataFilterQI.v" Line 8. Module DataFilter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/logeo.v" Line 8. Module logeo doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/Extras_MicroBlazer/Modules/BlockRAM.v" Line 8. Module BlockRAM_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.prbsQI
+Compiling module xil_defaultlib.filtro_firQI_default
+Compiling module xil_defaultlib.FaseAndSlicerQI
+Compiling module xil_defaultlib.CounterBerI
+Compiling module xil_defaultlib.CounterBerQ
+Compiling module xil_defaultlib.top_tx
+Compiling module xil_defaultlib.WaveSinAndCos
+Compiling module xil_defaultlib.DataFilter_default
+Compiling module xil_defaultlib.top_rotation
+Compiling module xil_defaultlib.BlockRAM_default
+Compiling module xil_defaultlib.logeo
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_prueba
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_prueba_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/ila.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/ila.protoinst for the following reason(s):
+There are no instances of module "ila" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/VIO.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/VIO.protoinst for the following reason(s):
+There are no instances of module "VIO" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/MicroGPIO.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/MicroGPIO.protoinst for the following reason(s):
+There are no instances of module "MicroGPIO" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7678.305 ; gain = 0.000 ; free physical = 4545 ; free virtual = 11997
+run 40000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Feb 24 14:06:11 2023] Launched synth_1...
+Run output will be captured here: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/synth_1/runme.log
+[Fri Feb 24 14:06:11 2023] Launched impl_1...
+Run output will be captured here: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2020.2/data/embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-18:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210319A288D7A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210319A288D7A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A288D7A
+set_property PROGRAM.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes u_VIO/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+commit_hw_vio [get_hw_probes {u_VIO/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes u_VIO/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+commit_hw_vio [get_hw_probes {u_VIO/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+close_hw_manager
+write_hw_platform -fixed -include_bit -force -file /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: /home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/top.xsa
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-18:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210319A288D7A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210319A288D7A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A288D7A
+set_property PROGRAM.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/danielito/Escritorio/run/project_9_FInal_Integrador_Beta_1_0/project_7_MIcroBlazer.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes u_VIO/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+commit_hw_vio [get_hw_probes {u_VIO/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes u_VIO/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+commit_hw_vio [get_hw_probes {u_VIO/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_VIO/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 24 14:45:55 2023...

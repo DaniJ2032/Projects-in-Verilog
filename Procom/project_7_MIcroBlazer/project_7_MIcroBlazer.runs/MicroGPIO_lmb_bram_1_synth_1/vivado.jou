@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 22 09:48:25 2022
+# Process ID: 29942
+# Current directory: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/MicroGPIO_lmb_bram_1_synth_1
+# Command line: vivado -log MicroGPIO_lmb_bram_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MicroGPIO_lmb_bram_1.tcl
+# Log file: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/MicroGPIO_lmb_bram_1_synth_1/MicroGPIO_lmb_bram_1.vds
+# Journal file: /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/MicroGPIO_lmb_bram_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source MicroGPIO_lmb_bram_1.tcl -notrace

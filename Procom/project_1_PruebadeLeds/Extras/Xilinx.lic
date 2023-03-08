@@ -1,0 +1,42 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Fri May 27 18:46:33 UTC 2022.
+#
+# This is license NODELOCKED to HOSTID=d03745c6d49b;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Fri May 27 18:46:33 UTC 2022
+INCREMENT Embedded_SDK xilinxd 2023.05 permanent uncounted \
+41104EC01B09 \
+VENDOR_STRING=dajjuarez@gmail.com,Embedded_SDK,software,permanent,_212170745_0_0_706 \
+HOSTID=d03745c6d49b ISSUER="Xilinx Inc" START=27-May-2022 \
+TS_OK
+#
+# This is a permanent license generated on Fri May 27 18:46:33 UTC 2022
+INCREMENT ISE_Embedded_Edition xilinxd 2023.05 permanent uncounted \
+5327171913EC \
+VENDOR_STRING=dajjuarez@gmail.com,ISE_Embedded_Edition,software,permanent,_212170745_0_0_001 \
+HOSTID=d03745c6d49b ISSUER="Xilinx Inc" START=27-May-2022 \
+TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE Embedded_SDK xilinxd 2023.05 CCBDB83121A7 COMPONENTS=SDK \
+OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE ISE_Embedded_Edition xilinxd 2023.05 02D41281F476 \
+COMPONENTS="ChipScopePro_SIOTK ChipscopePro ISE XPS ISIM \
+PlanAhead SDK" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------

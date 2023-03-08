@@ -1,0 +1,339 @@
+
+*** Running vivado
+    with args -log fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source fpga.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top fpga -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30557
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2313.836 ; gain = 0.000 ; free physical = 3871 ; free virtual = 8783
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/fpga_procom.v:10]
+	Parameter NB_GPIOS bound to: 32 - type: integer 
+	Parameter NB_LEDS bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:13]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_axi_gpio_0_3' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_axi_gpio_0_3' (1#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_axi_gpio_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_axi_uartlite_0_3' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_axi_uartlite_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_axi_uartlite_0_3' (2#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_axi_uartlite_0_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'MicroGPIO_axi_uartlite_0_3' is unconnected for instance 'axi_uartlite_0' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:160]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'MicroGPIO_axi_uartlite_0_3' has 22 connections declared, but only 21 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:160]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_clk_wiz_0_0' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_clk_wiz_0_0' (3#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_mdm_1_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_mdm_1_1' (4#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_microblaze_0_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_microblaze_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_microblaze_0_1' (5#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_microblaze_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'MicroGPIO_microblaze_0_1' is unconnected for instance 'microblaze_0' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:200]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'MicroGPIO_microblaze_0_1' has 52 connections declared, but only 51 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:200]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_microblaze_0_axi_periph_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:347]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8ZFSIN' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:797]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8ZFSIN' (6#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:797]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1WOCYFB' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:929]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1WOCYFB' (7#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:929]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1F4TXKZ' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1295]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1F4TXKZ' (8#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1295]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_xbar_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_xbar_1' (9#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'MicroGPIO_xbar_1' is unconnected for instance 'xbar' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:756]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'MicroGPIO_xbar_1' is unconnected for instance 'xbar' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:756]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'MicroGPIO_xbar_1' has 40 connections declared, but only 38 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:756]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_microblaze_0_axi_periph_1' (10#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:347]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_MHCC3B' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1061]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_dlmb_bram_if_cntlr_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_dlmb_bram_if_cntlr_1' (11#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_dlmb_v10_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_dlmb_v10_1' (12#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'MicroGPIO_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1207]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'MicroGPIO_dlmb_v10_1' has 25 connections declared, but only 24 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1207]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_ilmb_bram_if_cntlr_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_ilmb_bram_if_cntlr_1' (13#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_ilmb_v10_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_ilmb_v10_1' (14#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'MicroGPIO_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1253]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'MicroGPIO_ilmb_v10_1' has 25 connections declared, but only 24 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1253]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_lmb_bram_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_lmb_bram_1' (15#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'MicroGPIO_lmb_bram_1' is unconnected for instance 'lmb_bram' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1278]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'MicroGPIO_lmb_bram_1' is unconnected for instance 'lmb_bram' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1278]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'MicroGPIO_lmb_bram_1' has 16 connections declared, but only 14 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1278]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_MHCC3B' (16#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:1061]
+INFO: [Synth 8-6157] synthesizing module 'MicroGPIO_rst_clk_wiz_0_100M_1' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_rst_clk_wiz_0_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO_rst_clk_wiz_0_100M_1' (17#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/MicroGPIO_rst_clk_wiz_0_100M_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'MicroGPIO_rst_clk_wiz_0_100M_1' is unconnected for instance 'rst_clk_wiz_0_100M' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:336]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'MicroGPIO_rst_clk_wiz_0_100M_1' is unconnected for instance 'rst_clk_wiz_0_100M' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:336]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'MicroGPIO_rst_clk_wiz_0_100M_1' has 10 connections declared, but only 8 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:336]
+INFO: [Synth 8-6155] done synthesizing module 'MicroGPIO' (18#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/synth/MicroGPIO.v:13]
+WARNING: [Synth 8-7071] port 'gpio_rtl_tri_t' of module 'MicroGPIO' is unconnected for instance 'u_MicroGPIO' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/fpga_procom.v:66]
+WARNING: [Synth 8-7023] instance 'u_MicroGPIO' of module 'MicroGPIO' has 9 connections declared, but only 8 given [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/fpga_procom.v:66]
+INFO: [Synth 8-6157] synthesizing module 'VIO' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/VIO/synth/VIO.v:13]
+INFO: [Synth 8-6157] synthesizing module 'VIO_vio_0_0' [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/VIO_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VIO_vio_0_0' (19#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/.Xil/Vivado-30534-daniel-lmint/realtime/VIO_vio_0_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/VIO/synth/VIO.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'VIO' (20#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/VIO/synth/VIO.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'fpga' (21#1) [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/fpga_procom.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2313.836 ; gain = 0.000 ; free physical = 3823 ; free virtual = 8735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2313.836 ; gain = 0.000 ; free physical = 4566 ; free virtual = 9479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2313.836 ; gain = 0.000 ; free physical = 4565 ; free virtual = 9477
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2313.836 ; gain = 0.000 ; free physical = 4501 ; free virtual = 9414
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/VIO/ip/VIO_vio_0_0/VIO_vio_0_0/VIO_vio_0_0_in_context.xdc] for cell 'u_VIO/vio_0'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/VIO/ip/VIO_vio_0_0/VIO_vio_0_0/VIO_vio_0_0_in_context.xdc] for cell 'u_VIO/vio_0'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0_in_context.xdc] for cell 'u_MicroGPIO/clk_wiz_0'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0_in_context.xdc] for cell 'u_MicroGPIO/clk_wiz_0'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_microblaze_0_1/MicroGPIO_microblaze_0_1/MicroGPIO_microblaze_0_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_microblaze_0_1/MicroGPIO_microblaze_0_1/MicroGPIO_microblaze_0_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_dlmb_v10_1/MicroGPIO_dlmb_v10_1/MicroGPIO_dlmb_v10_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_dlmb_v10_1/MicroGPIO_dlmb_v10_1/MicroGPIO_dlmb_v10_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_ilmb_v10_1/MicroGPIO_ilmb_v10_1/MicroGPIO_dlmb_v10_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_ilmb_v10_1/MicroGPIO_ilmb_v10_1/MicroGPIO_dlmb_v10_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_dlmb_bram_if_cntlr_1/MicroGPIO_dlmb_bram_if_cntlr_1/MicroGPIO_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_dlmb_bram_if_cntlr_1/MicroGPIO_dlmb_bram_if_cntlr_1/MicroGPIO_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_ilmb_bram_if_cntlr_1/MicroGPIO_ilmb_bram_if_cntlr_1/MicroGPIO_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_ilmb_bram_if_cntlr_1/MicroGPIO_ilmb_bram_if_cntlr_1/MicroGPIO_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_lmb_bram_1/MicroGPIO_lmb_bram_1/MicroGPIO_lmb_bram_1_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_lmb_bram_1/MicroGPIO_lmb_bram_1/MicroGPIO_lmb_bram_1_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_mdm_1_1/MicroGPIO_mdm_1_1/MicroGPIO_mdm_1_0_in_context.xdc] for cell 'u_MicroGPIO/mdm_1'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_mdm_1_1/MicroGPIO_mdm_1_1/MicroGPIO_mdm_1_0_in_context.xdc] for cell 'u_MicroGPIO/mdm_1'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_rst_clk_wiz_0_100M_1/MicroGPIO_rst_clk_wiz_0_100M_1/MicroGPIO_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'u_MicroGPIO/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_rst_clk_wiz_0_100M_1/MicroGPIO_rst_clk_wiz_0_100M_1/MicroGPIO_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'u_MicroGPIO/rst_clk_wiz_0_100M'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_axi_uartlite_0_3/MicroGPIO_axi_uartlite_0_3/MicroGPIO_axi_uartlite_0_1_in_context.xdc] for cell 'u_MicroGPIO/axi_uartlite_0'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_axi_uartlite_0_3/MicroGPIO_axi_uartlite_0_3/MicroGPIO_axi_uartlite_0_1_in_context.xdc] for cell 'u_MicroGPIO/axi_uartlite_0'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_xbar_1/MicroGPIO_xbar_1/MicroGPIO_xbar_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_xbar_1/MicroGPIO_xbar_1/MicroGPIO_xbar_0_in_context.xdc] for cell 'u_MicroGPIO/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_axi_gpio_0_3/MicroGPIO_axi_gpio_0_3/MicroGPIO_axi_gpio_0_0_in_context.xdc] for cell 'u_MicroGPIO/axi_gpio_0'
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_axi_gpio_0_3/MicroGPIO_axi_gpio_0_3/MicroGPIO_axi_gpio_0_0_in_context.xdc] for cell 'u_MicroGPIO/axi_gpio_0'
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/Arty_Master.xdc]
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/Arty_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/Extras_MicroBlazer/Arty_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.723 ; gain = 0.000 ; free physical = 4479 ; free virtual = 9392
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2345.723 ; gain = 0.000 ; free physical = 4479 ; free virtual = 9392
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_MicroGPIO/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4531 ; free virtual = 9445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4531 ; free virtual = 9444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk100. (constraint file  /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk100. (constraint file  /home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.gen/sources_1/bd/MicroGPIO/ip/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0/MicroGPIO_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for u_VIO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_VIO/vio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u_MicroGPIO/axi_gpio_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4531 ; free virtual = 9444
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4522 ; free virtual = 9436
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4509 ; free virtual = 9426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4404 ; free virtual = 9321
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4404 ; free virtual = 9321
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4404 ; free virtual = 9322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------+----------+
+|      |BlackBox name                  |Instances |
++------+-------------------------------+----------+
+|1     |MicroGPIO_xbar_1               |         1|
+|2     |MicroGPIO_axi_gpio_0_3         |         1|
+|3     |MicroGPIO_axi_uartlite_0_3     |         1|
+|4     |MicroGPIO_clk_wiz_0_0          |         1|
+|5     |MicroGPIO_mdm_1_1              |         1|
+|6     |MicroGPIO_microblaze_0_1       |         1|
+|7     |MicroGPIO_rst_clk_wiz_0_100M_1 |         1|
+|8     |MicroGPIO_dlmb_bram_if_cntlr_1 |         1|
+|9     |MicroGPIO_dlmb_v10_1           |         1|
+|10    |MicroGPIO_ilmb_bram_if_cntlr_1 |         1|
+|11    |MicroGPIO_ilmb_v10_1           |         1|
+|12    |MicroGPIO_lmb_bram_1           |         1|
+|13    |VIO_vio_0_0                    |         1|
++------+-------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |MicroGPIO_axi_gpio_0         |     1|
+|2     |MicroGPIO_axi_uartlite_0     |     1|
+|3     |MicroGPIO_clk_wiz_0          |     1|
+|4     |MicroGPIO_dlmb_bram_if_cntlr |     1|
+|5     |MicroGPIO_dlmb_v10           |     1|
+|6     |MicroGPIO_ilmb_bram_if_cntlr |     1|
+|7     |MicroGPIO_ilmb_v10           |     1|
+|8     |MicroGPIO_lmb_bram           |     1|
+|9     |MicroGPIO_mdm_1              |     1|
+|10    |MicroGPIO_microblaze_0       |     1|
+|11    |MicroGPIO_rst_clk_wiz_0_100M |     1|
+|12    |MicroGPIO_xbar               |     1|
+|13    |VIO_vio_0                    |     1|
+|14    |LUT1                         |     1|
+|15    |LUT3                         |     4|
+|16    |IBUF                         |     6|
+|17    |OBUF                         |    17|
++------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.723 ; gain = 31.887 ; free physical = 4405 ; free virtual = 9324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2345.723 ; gain = 0.000 ; free physical = 4453 ; free virtual = 9372
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.730 ; gain = 31.887 ; free physical = 4453 ; free virtual = 9372
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.730 ; gain = 0.000 ; free physical = 4538 ; free virtual = 9457
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.730 ; gain = 0.000 ; free physical = 4490 ; free virtual = 9409
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 2345.730 ; gain = 32.023 ; free physical = 4634 ; free virtual = 9553
+INFO: [Common 17-1381] The checkpoint '/home/danielito/Escritorio/Vivado_proyect/project_7_MIcroBlazer/project_7_MIcroBlazer.runs/synth_1/fpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga_utilization_synth.rpt -pb fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 09:53:01 2022...

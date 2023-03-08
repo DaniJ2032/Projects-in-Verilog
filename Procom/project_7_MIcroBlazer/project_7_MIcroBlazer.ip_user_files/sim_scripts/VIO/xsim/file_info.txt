@@ -1,0 +1,3 @@
+VIO_vio_0_0.v,verilog,xil_defaultlib,../../../bd/VIO/ip/VIO_vio_0_0/sim/VIO_vio_0_0.v,incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/1b7e/hdl/verilog"incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/122e/hdl/verilog"incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/46fd/hdl"
+VIO.v,verilog,xil_defaultlib,../../../bd/VIO/sim/VIO.v,incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/1b7e/hdl/verilog"incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/122e/hdl/verilog"incdir="../../../../project_7_MIcroBlazer.gen/sources_1/bd/VIO/ipshared/46fd/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v
